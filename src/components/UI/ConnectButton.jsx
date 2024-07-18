@@ -56,6 +56,7 @@ function ConnectButton() {
   const { wallets } = useWallets()
   const { setWallet } = useWallet()
 
+  console.log(wallets)
   const handleClick = (event) => {
     if (connected) {
       setAnchorEl(event.currentTarget)
@@ -291,12 +292,13 @@ function ConnectButton() {
             position: 'fixed',
             filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
             mt: 1.2,
-            borderRadius: '10px',
+            borderRadius: '5px',
             border: 'solid 1px black',
-            background: '#ede5e4',
+            background: '#949494',
+            paddingX: '5px',
             '& ul': {
               padding: '0px !important',
-              backgroundColor: '#ede5e4',
+              backgroundColor: '#949494',
               borderRadius: '11px',
             },
             '& .MuiAvatar-root': {
@@ -304,20 +306,7 @@ function ConnectButton() {
               height: 32,
               ml: 0,
               mr: 1,
-            },
-            '&:before': {
-              content: '""',
-              display: 'block',
-              position: 'absolute',
-              border: 'solid 1px black',
-              top: 0,
-              right: 14,
-              backgroundColor: '#ede5e4',
-              width: 10,
-              height: 10,
-              transform: 'translateY(-50%) rotate(45deg)',
-              zIndex: 0,
-            },
+            }
           },
         }}
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
