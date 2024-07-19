@@ -3,7 +3,7 @@ import { Fade as Hamburger } from 'hamburger-react'
 import ConnectButton from '../components/UI/ConnectButton'
 
 function Header() {
-  // const currentUrl = window.location.pathname
+  const currentUrl = window.location.pathname
   const [isMobile, setMobile] = useState(false)
   return (
     <div className='py-[21px] bg-[#F4F5F3] text-black border-[#e3e4e5] border-b-[0.5px]'>
@@ -18,14 +18,14 @@ function Header() {
           <span>|</span>
           <div className='hidden lg:flex text-gray-700'>
             <ul className='nav_list lg: flex gap-3'>
-              <li className={`list_item ${true ? 'active' : ''}`}>
+              <li className={`list_item ${currentUrl === '/' ? 'font-bold' : ''}`}>
                 <a href={'/'}>Home</a>
                 <div className='flex gap-[2px]'>
                   <div className='h-1 w-full bg-symbol'></div>
                   <div className='w-1 h-1 bg-symbol rounded-full'></div>
                 </div>
               </li>
-              <li className={`list_item ${false ? 'active' : ''}`}>
+              <li className={`list_item ${currentUrl === '/swap' ? 'font-bold' : ''}`}>
                 <a href={'/swap'}>Swap</a>
                 <div className='flex gap-[2px]'>
                   <div className='h-1 w-full bg-symbol'></div>
@@ -58,7 +58,7 @@ function Header() {
             <ul className='nav_list'>
               <li
                 className={`list_item ${
-                  true ? 'active' : ''
+                  currentUrl === '/' ? 'font-bold' : ''
                 } py-2 hover:bg-slate-500 px-3`}
               >
                 <a href={'/home'}>Home</a>
@@ -69,7 +69,7 @@ function Header() {
               </li>
               <li
                 className={`list_item ${
-                  false ? 'active' : ''
+                  currentUrl === '/swap' ? 'font-bold' : ''
                 } py-2 hover:bg-slate-500 px-3`}
               >
                 <a href={'/home'}>Swap</a>
