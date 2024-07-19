@@ -8,13 +8,13 @@ function Swap() {
       <div className='min-w-lg bg-white rounded-lg overflow-hidden shadow-lg px-5 py-5'>
         <div className='mb-2'>
           <div>
-            <h2 className='font-bold text-[26px]'>RUNE SWAP</h2>
+            <h2 className='font-bold text-[32px]'>Swap</h2>
           </div>
         </div>
-        <div className='flex bg-[#f9faf7] border-[#e3e4e5] border-[0.5px] rounded-md '>
+        <div className='flex bg-[#f9faf7] border-[#e3e4e5] border-[0.5px] text-gray-500 rounded-md  '>
           <div className=' px-5 py-3 border-r-[0.5px] border-[#e3e4e5]'>
-            <div className='mb-2 mr-3 text-opacity-50'>
-              <span>You pay</span>
+            <div className='mb-2 mr-3 '>
+              <span className=' text-[14px]'>You pay</span>
             </div>
             <div className='mb-2'>
               <input
@@ -24,16 +24,16 @@ function Swap() {
               />
             </div>
             <div className='flex gap-3 '>
-              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-700'>
+              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-500'>
                 <span>25%</span>
               </div>
-              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-700'>
+              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-500'>
                 <span>50%</span>
               </div>
-              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-700'>
+              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-500'>
                 <span>75%</span>
               </div>
-              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-700'>
+              <div className='px-1 rounded-md cursor-pointer border-2 border-gray-500'>
                 <span>100%</span>
               </div>
             </div>
@@ -62,7 +62,7 @@ function Swap() {
         <div className='flex justify-center py-4'>
           <IoMdSync className='text-[36px]' />
         </div>
-        <div className='flex bg-[#f9faf7] border-[#e3e4e5] border-[0.5px] rounded-md mb-12'>
+        <div className='flex bg-[#f9faf7] border-[#e3e4e5] border-[0.5px] text-gray-500 rounded-md mb-12'>
           <div className=' px-5 py-3 border-r-[0.5px] border-[#e3e4e5]'>
             <div className='mb-2 mr-3 text-opacity-50'>
               <span>You receive</span>
