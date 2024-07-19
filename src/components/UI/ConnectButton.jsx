@@ -247,10 +247,10 @@ function ConnectButton() {
             data-augmented-ui='tl-clip br-clip border inlay'
             aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup='true'
-            className='claim connector'
+            className='claim connector px-4 py-1 rounded-lg bg-black text-[#59B200] text-[14px]'
             onClick={handleClick}
           >
-            {isMobile ? 'Connect' : 'connect'}
+            {isMobile ? 'Connect' : 'Connect Wallet'}
           </button>
         </div>
       ) : (
